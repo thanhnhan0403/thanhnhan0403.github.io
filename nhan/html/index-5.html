@@ -4,14 +4,28 @@
 <head>
 	<title>Image Gallery</title>
 		<meta charset="tf-8"/>
+		<style> 
+		.box {float: left; width: 30%;}
+		img.anh1 {max-width: 250px; width}
+		a{font-size: 20px}
+	</style>
 		<body>
-<img src="/hanoi-club-1.jpg"; alt="ảnh khách sạn"; title="câu lạc bộ hà nội">
+<img src="../picture/hanoi-club-1.jpg"; alt="ảnh khách sạn"; title="câu lạc bộ hà nội"; width="100%">
 	</body>
 	<br>
-	<div id="main-menu">
-		<a href="nhahang.html"> ẩm thực</a>
-		<a href="sport.html"> thể thao</a>
-		<a href="hotel.html"> Lưu trú</a>
+	<div>
+		<div class="box food">
+		<a href="nhahang.html"> Ẩm thực <br>
+			<img class="anh1" src="../picture/Tivoli-Cafe.jpg";>	
+		</a>
+	</div>
+	<div class="box sport">	<a href="sport.html"> Thể thao <br>
+			<img class="anh1" src="../picture/gym.jpg"; ></a>
+	</div>
+	<div class="box room">
+		<a href="hotel.html"> Lưu trú <br>
+		<img class="anh1" src="../picture/room1.jpg";> </a>
+	</div>
 
 	</div>
 </head>

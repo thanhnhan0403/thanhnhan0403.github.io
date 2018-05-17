@@ -1,0 +1,5 @@
+a {font-size: 20px}
+a: link {color: blue}
+a: Hover {color: green}
+a: visited {color: grey}
+a: active {color: red}
