@@ -1,5 +1,4 @@
-a {font-size: 20px}
-a: link {color: blue}
-a: Hover {color: green}
-a: visited {color: grey}
-a: active {color: red}
+.tieude a: link {color: pink}
+.tieude a: Hover {color: green}
+.tieude a: visited {color: grey}
+.tieude a: active {color: red}
