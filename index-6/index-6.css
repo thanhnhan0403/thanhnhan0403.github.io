@@ -1,11 +1,12 @@
 h1{color: red}
 h2{color:green}
-img { width: 30%; 
+img { width: 33%; 
     height: 300px;
     padding: 10px  
 }
 .banner{width: 100%;
 }
+
 *{max-width: 1000px; margin: auto;}
 * {
     box-sizing: border-box;
@@ -18,13 +19,19 @@ a:hover{color: aquamarine}
 a: :visited{color: green}
 a: :active{color : pink}
 .menu { background-color: yellowgreen;
-position: absolute;
-
 
 max-width: 150px;
 max-height: 300px;}
-#than { position: relative;}
+#pos{font-size: 40px;
+background-color: yellow
+;
+position: relative;}
 
+.menu{position: absolute;
+top: 0
+left: 0;}
+
+#than{width: 80%; float: right;}
 #top{
     position: fixed;
     right:0;
