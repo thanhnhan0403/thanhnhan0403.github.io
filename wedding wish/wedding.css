@@ -16,6 +16,9 @@ h1{text-align: center;
 	background-color: yellow;
 	color: red;
 }
+h2 {color: red;
+ }
+ 
 img{
 width: 80%;
 height: 80%;
@@ -29,6 +32,36 @@ img: hover {
     transform: skewY(30deg);
     opacity: 0.8;
  }
+ @keyframes title {
+    0%  {background-color: #EF7126; color: #F9E559;}
+    25%  {background-color: #6F3662; color: #FFFFFF;}
+    50%  {background-color: #9F6164; color: #F8DEBD;}
+    75%  {background-color: #44B3C2; color: #FFFFFF;}
+    100% {background-color: #218C8D; color: #F9E559;}
+}
+h1 {
+	animation: title 10s ease infinite;
+}
+
+
+@keyframes myfirst {
+    0%   {color:red; left:0px; top:0px;}
+    25%  {color:yellow; left:200px; top:0px;}
+    50%  {color:blue; left:200px; top:200px;}
+    75%  {color:green; left:0px; top:200px;}
+    100% {color:red; left:0px; top:0px;}
+}
+
+
+
+.ten1 .ten2{
+    width: 100px;
+    height: 100px;
+   font-size: 40px;
+    position: relative;
+  animation: myfirst 5s linear 2s infinite alternate; 
+    animation: myfirst 5s linear 2s infinite alternate;}
+
 
 .firework {
   position: absolute;
@@ -43,16 +76,6 @@ img: hover {
   width: 5px;
   position: absolute;
   border-radius: 50%;
-}
-@keyframes title {
-    0%  {background-color: #EF7126; color: #F9E559;}
-    25%  {background-color: #6F3662; color: #FFFFFF;}
-    50%  {background-color: #9F6164; color: #F8DEBD;}
-    75%  {background-color: #44B3C2; color: #FFFFFF;}
-    100% {background-color: #218C8D; color: #F9E559;}
-}
-h1 {
-	animation: title 10s ease infinite;
 }
 
 @keyframes shoot1 {
