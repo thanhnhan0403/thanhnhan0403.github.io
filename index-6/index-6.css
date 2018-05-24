@@ -17,12 +17,15 @@ a: link{color: red}
 a:hover{color: aquamarine}
 a: :visited{color: green}
 a: :active{color : pink}
-.menu { background-color: yellowgreen;}
+.menu { background-color: yellowgreen;
+padding: 10px, margin: 10px; float: right;
+}
 .menu {position: absolute;
 top: 0
 left: 0;
 }
-#than { position: relative;max-width: 80%;
+.h3{position: relative}
+#than { ;max-width: 80%;
 float: right; }
 #than > h2:first-child {position: relative;}
 .no-float {clear: both;}
