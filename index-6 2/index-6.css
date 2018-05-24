@@ -1,0 +1,36 @@
+h1{color: red}
+h2{color:green}
+img { width: 30%; 
+    height: 300px;
+    padding: 10px  
+}
+.banner{width: 100%;
+}
+*{max-width: 1000px; margin: auto;}
+* {
+    box-sizing: border-box;
+}
+a {font-size: 30px; margin: 10px ;;
+
+}
+a: link{color: red}
+a:hover{color: aquamarine}
+a: :visited{color: green}
+a: :active{color : pink}
+.menu { background-color: yellowgreen;
+position: absolute;
+
+
+max-width: 150px;
+max-height: 300px;}
+#than { position: relative;}
+
+#top{
+    position: fixed;
+    right:0;
+    bottom: 0}
+    #top img{ height: 100px;
+    width: 100px;}
+    
+
+   
