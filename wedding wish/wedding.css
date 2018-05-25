@@ -21,13 +21,11 @@ h2 {color: red;
  }
  
 .font{
-<<<<<<< HEAD
+
 width: 100%;
 height: 100%;
-=======
-width: 80%;
-height: 80%;
->>>>>>> f38efd3d1fb374db668ac1497b8e73e191eaac27
+
+
 position: absolute;
 top: 100px;
 left: 50px;
