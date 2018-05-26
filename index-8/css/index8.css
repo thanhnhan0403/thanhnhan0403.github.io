@@ -1,0 +1,30 @@
+*{max-width: 1000px;
+background-color: bisque}
+.banner{width: 100%}
+
+.intro{font-size: 40px;
+position: relative;}
+.intro a: link{ color: blue;}
+.intro a: hover{ color: green;}
+
+.intro a: active{ color: yellow;}
+.intro a: visited{ color: red;}
+
+.logo{width: 10%;
+    position: absolute;
+    top: -95px;
+    left: 0;}
+.clear{clear: both;
+    
+}
+.menu{max-width: 30%;
+height: 300px;
+float: left;
+padding: 10px;}
+
+.anh1{max-width: 95%;
+height: 250px;
+}
+.promote{max-width:1000px; 
+justify-content: center;}
+h1{justify-content: center}
