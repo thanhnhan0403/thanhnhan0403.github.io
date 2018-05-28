@@ -3,20 +3,30 @@ background-color: bisque}
 .banner{width: 100%}
 
 .intro{font-size: 40px;
-position: relative;}
-<<<<<<< HEAD
-.intro a: link{ color: blue;}
-.intro a: hover{ color: green;}
+position: relative;
+color: brown;}
 
-.intro a: active{ color: yellow;}
-.intro a: visited{ color: red;}
-=======
 
-.intro a: hover{ color: green;}
-.intro a: link{ color: blue;}
-.intro a: :active{ color: yellow;}
-.intro a: :visited{ color: red;}
->>>>>>> d67eeef8a224fdd122804ef444437b9e5c40c2ad
+.menu{max-width:31.18796%;
+height: 300px;
+float: left;
+padding: 10px;
+color: pink;
+font-size: 30px;
+opacity: 1;
+transition: opacity: 1s linear;
+}
+.menu:hover img{ opacity: 0.5;
+}
+
+
+
+.intro a:hover { color: green;}
+
+.intro a:active { color: yellow;}
+
+.intro a:visited { color: pink;}
+
 
 .logo{width: 10%;
     position: absolute;
@@ -25,18 +35,24 @@ position: relative;}
 .clear{clear: both;
     
 }
-.menu{max-width: 30%;
-height: 300px;
-float: left;
-<<<<<<< HEAD
-padding: 10px;}
-=======
-margin: 10px;}
->>>>>>> d67eeef8a224fdd122804ef444437b9e5c40c2ad
 
 .anh1{max-width: 95%;
+	vertical-align: middle;
 height: 250px;
 }
+.thumb1 img{ 
+transition: all 0.5s linear }
+.thumb1:hover { 
+transition: scale(2); }
+
+.thumb2 {padding: 5px;
+    transition: all 0.5s ease;
+}
+.thumb2:hover {
+	transform: translate(0, -10px);
+}x
 .promote{max-width:1000px; 
-justify-content: center;}
-h1{justify-content: center}
+justify-content: center;
+float: left;
+}
+h1{text-align: center;}
