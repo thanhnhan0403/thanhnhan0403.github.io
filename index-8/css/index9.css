@@ -1,4 +1,5 @@
 *{max-width: 1000px;
+	box-sizing: border-box;
 background-color: bisque}
 .banner{width: 100%}
 
@@ -19,6 +20,19 @@ transition: opacity: 1s linear;
 .menu:hover img{ opacity: 0.5;
 }
 
+#menu{width: 1000px;
+height: 100px;
+padding: 10px;}
+#menu > li{ float:left; 
+	list-style-type: none;
+}
+
+#menu >li > ul {
+				display: none;
+				padding: 10px;}
+#menu > li:hover > ul{
+		display: block;
+}
 
 
 .intro a:hover { color: green;}
@@ -50,9 +64,9 @@ transition: scale(2); }
 }
 .thumb2:hover {
 	transform: translate(0, -10px);
-}x
+}
 .promote{max-width:1000px; 
 justify-content: center;
 float: left;
 }
-h1{text-align: center;}
+
