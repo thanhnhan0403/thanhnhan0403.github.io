@@ -6,20 +6,6 @@ background-color: bisque}
 .intro{font-size: 40px;
 position: relative;
 color: brown;}
-
-
-.menu{max-width:31.18796%;
-height: 300px;
-float: left;
-padding: 10px;
-color: pink;
-font-size: 30px;
-opacity: 1;
-transition: opacity: 1s linear;
-}
-.menu:hover img{ opacity: 0.5;
-}
-
 #menu{width: 1000px;
 height: 100px;
 padding: 10px;}
@@ -49,6 +35,21 @@ padding: 10px;}
 .clear{clear: both;
     
 }
+
+
+.menu{max-width:31.18796%;
+height: 300px;
+float: left;
+padding: 10px;
+color: pink;
+font-size: 30px;
+opacity: 1;
+transition: opacity: 1s linear;
+}
+.menu:hover img{ opacity: 0.5;
+}
+
+
 
 .anh1{max-width: 95%;
 	vertical-align: middle;

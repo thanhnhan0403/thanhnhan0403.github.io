@@ -2,28 +2,142 @@
 <html>
 <head>
 	<title>Buffet</title>
+	<style>
+		
+*{max-width: 1000px;
+
+	box-sizing: border-box;
+background-color: bisque}
+.banner{width: 100%}
+
+.intro{font-size: 40px;
+position: relative;
+color: brown;
+height: 200px;}
+
+#menu{width: 1000px;
+height: 100px;
+padding: 10px;}
+
+#menu > li{ float:left; 
+	list-style-type: none;
+}
+
+#menu >li > ul {
+				display: none;
+				padding: 10px;}
+#menu > li:hover > ul{
+		display: block;
+}
+
+
+.intro a:hover { color: green;}
+
+.intro a:active { color: yellow;}
+
+.intro a:visited { color: pink;}
+
+
+.logo{width: 10%;
+    position: absolute;
+    top: -95px;
+    left: 0;}
+.clear{clear: both;
+    
+}
+#food{float: left;
+width: 50%;
+height:350px; 
+padding: 5px}
+
+#food img{max-width: 100%;
+	max-height: 100%;
+}
+
+
+	</style>
 </head>
 <body>
+
+	<img class="banner" src="https://muachung10.vcmedia.vn/thumb_w/640,90/i:gallery/2015/06/29/bdjve/Buffet-Toi-Thu-7-Hang-Tuan-NH-Tivoli-Khach-San-4-sao-The-Hanoi-Club.jpg">
+<div class="intro">
+	<img class="logo" src="../image/logo.jpg">
+	<div clear></div>
+		<ul id="menu">
+	<li>
+		<a href="index9.html">
+		<span>Trang chủ</span>
+	</a>
+	</li>
+	<li>
+		<a href="gioithieu.html">
+			<span>Giới thiệu</span>
+		</a>
+	</li>
+	<li>
+		<a href="diachi.html">
+			<span>Địa chỉ</span>
+		</a>
+	</li>
+	<li>
+		<a href="menu.html">
+			<span>menu</span>
+		</a>
+		<ul>
+			<li><a href="alacarte.html"> Menu alacarte </a></li>
+			<li><a href="buffet.html"> Menu Buffet</a></li>
+			<li><a href="set.html">Menu Set cho tiệc</a></li>	
+		</ul>
+	</li>	
+</ul>
+</div>
+
+
 <h1>Vietnamese Buffet </h1>
 <h3>Giá: 370.000 VND/người </h3>
 <p>Duy nhất 1 tuần một lần, vào tối thứ 7 hàng tuần nhà hàng Tivoli bán buffet với menu vô cùng phong phú đa dạng.</p>
-<div>
+<div class="list">
+	<div id="food">
 	<a href="salat.html">
-		<img src="bufer4.jpg">
-	các món salat
+		<span>các món salat</span><br>
+		<img src="../image/buffet4.jpg">
 	</a>
-	<a href="khaivi.html">món khai vị
-		<img src="buffet3.jpg">
+	</div>
+
+	<div id="food">
+	<a href="khaivi.html">
+	<span>món khai vị</span><br>
+		<img src="../image/buffet3.jpg">
 	</a>
-	<a href="hotfood.html"> món nóng</a>
-	<a href="">Quầy mỳ 
-		<img src="noodle.JPG">
+	</div>
+
+	<div id="food" >
+	<a href="hotfood.html"> 
+		<span> món nóng </span><br>
+		<img src="../image/hot.jpg">
 	</a>
-	<a href=""> Quầy Nướng
-		<img src="bfnuong.jpg">
+	</div>
+
+	<div id="food">
+	<a href="noodle.html">
+		<span> Quầy mỳ </span><br>
+		<img src="../image/noodle.JPG">
 	</a>
-	<a href=""> Đồ tráng miệng 
-		<img src="desrest.jpg"></a>
+	</div>
+
+	<div id="food">
+	<a href="bbq.html"> 
+		<span>Quầy Nướng </span><br>
+		<img src="../image/bfnuong.jpg">
+	</a>
+	</div>
+
+	<div id="food">
+	<a href="dessert.html"> 
+		<span> Đồ tráng miệng </span><br>
+		<img src="../image/desrest.jpg">
+	</a>
+	</div>
 </div>
 
 </body>
