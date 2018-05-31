@@ -1,14 +1,19 @@
 *{max-width: 1000px;
 	box-sizing: border-box;
-background-color: bisque}
+background-color: bisque;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+}
 .banner{width: 100%}
 
 .intro{font-size: 40px;
 position: relative;
 color: brown;}
-#menu{width: 1000px;
+
+#menu{max-width: 1000px;
 height: 100px;
 padding: 10px;}
+
 #menu > li{ float:left; 
 	list-style-type: none;
 }
@@ -35,10 +40,13 @@ padding: 10px;}
 .clear{clear: both;
     
 }
-
+.anh2{max-width: 30%;
+float: left;}
+.anh3{max-width: 70%;
+float: left;}
 
 .menu{max-width:31.18796%;
-height: 300px;
+height: 400px;
 float: left;
 padding: 10px;
 color: pink;
@@ -49,7 +57,10 @@ transition: opacity: 1s linear;
 .menu:hover img{ opacity: 0.5;
 }
 
-
+.promote{max-width:1000px; 
+justify-content: center;
+float: left;
+}
 
 .anh1{max-width: 95%;
 	vertical-align: middle;

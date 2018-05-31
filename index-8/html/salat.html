@@ -1,45 +1,56 @@
 <!DOCTYPE html>
 <html>
-<style >
-	img{max-width: 100%
-		max-height: 100%;}
-	#salat{width: 500px;
-			height: 300px;
-			float: left;}
-</style>
 <head>
 	<title> Salat</title>
-	<style> 
-	img{max-width: 500px}
+<style >
+*{box-sizing: border-box;
+max-width: 1200px;}
+	img{max-width: 100%
+		height: 100%;}
+
+
+	.salat{max-width: 30%;
+			max-height: 300px;
+			padding: 5px;
+			float: left;
+			overflow: hidden;		}
+}
+h1 {color: blue;
+    text-align: center;
+}
+
 </style>
+</head>
+<body>
+
 <h1>Các loại salat </h1>
-<div id="salat">
+<div class="wrap">
+<div class="salat ngo">
 	<p>Salat Ngô ngọt</p>
-	<img src="../image/salatngo.jpeg" title="Salat Ngô ngọt">
+	<img src="../image/ngo.jpg" title="Salat Ngô ngọt">
 </div>
-<div id="salat">
+<div class="salat greek">
 	<p> Salat Hy Lạp</p>
 	<img src="../image/greek.jpg" title="Salat Hy Lạp">
 </div>
-<div id="salat">
+<div class="salat nom1">
 	<p>Nộm Ngó Sen</p>
 	<img src="../image/salat1.jpg" title ="Nộm ngó sen">
 </div>
-<div id="salat">
+<div class="salat nga">
 	<p>Salat Nga</p>
 	<img src="../image/salatnga.jpg" title="salat Nga">
 </div>
-<div id="salat">
+<div class="salat nom2">
 	<p>Nộm đu đủ</p>
 	<img src="../image/nomdudu.jpg" title="Nộm đu đủ">
 </div>
-<div id="salat">
+<div class="salat nom3">
 	<p>Nộm xoài xanh</p>
 	<img src="../image/nomxoai.jpg" title="Nộm xoài xanh">
 </div>
+</div>
 
-</head>
-<body>
 
 </body>
 </html>
