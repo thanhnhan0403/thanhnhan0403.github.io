@@ -6,12 +6,12 @@ text-align: center;
 }
 .banner{width: 100%}
 
-.intro{font-size: 40px;
+.intro{font-size: 20px;
 position: relative;
 color: brown;}
 
 #menu{max-width: 1000px;
-height: 100px;
+height: 200px;
 padding: 10px;}
 
 #menu > li{ float:left; 
@@ -41,12 +41,15 @@ padding: 10px;}
     
 }
 .anh2{max-width: 30%;
-float: left;}
+float: left;
+transition: opacity: 1s linear
+}
 .anh3{max-width: 70%;
-float: left;}
+float: left;
+transition: opacity: 1s linear}
 
 .menu{max-width:31.18796%;
-height: 400px;
+height: 300px;
 float: left;
 padding: 10px;
 color: pink;
@@ -66,19 +69,8 @@ float: left;
 	vertical-align: middle;
 height: 250px;
 }
-.thumb1 img{ 
-transition: all 0.5s linear }
-.thumb1:hover { 
-transition: scale(2); }
 
-.thumb2 {padding: 5px;
-    transition: all 0.5s ease;
-}
-.thumb2:hover {
-	transform: translate(0, -10px);
-}
-.promote{max-width:1000px; 
-justify-content: center;
-float: left;
-}
-
+.anh2:hover { width: 50%; }
+h1 {text-align: center;
+background-color: yellow ; 
+color: red;}
