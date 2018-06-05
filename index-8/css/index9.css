@@ -1,14 +1,15 @@
-*{max-width: 1000px;
-	box-sizing: border-box;
+*{	box-sizing: border-box;
 background-color: bisque;
 font-family: Arial, Helvetica, sans-serif;
-text-align: center;
 }
-.banner{width: 100%}
+
+
+
+.banner img{width: 100%;}
 
 .intro{font-size: 20px;
 position: relative;
-color: brown;}
+}
 
 #menu{max-width: 1000px;
 height: 200px;
@@ -18,7 +19,7 @@ padding: 10px;}
 	list-style-type: none;
 }
 
-#menu >li > ul {
+#menu >li > ul {list-style-type: none;
 				display: none;
 				padding: 10px;}
 #menu > li:hover > ul{
@@ -35,18 +36,33 @@ padding: 10px;}
 
 .logo{width: 10%;
     position: absolute;
-    top: -95px;
+    top: -100px;
     left: 0;}
 .clear{clear: both;
     
 }
-.anh2{max-width: 30%;
-float: left;
-transition: opacity: 1s linear
+.wrap {max-width: 1000px;
+margin: auto;}
+
+.km1 { float: left;
+	max-width: 30%;
+	 transition: opacity: 1s linear 
 }
-.anh3{max-width: 70%;
-float: left;
-transition: opacity: 1s linear}
+
+.km2{float: left;
+	max-width: 70%; transition: opacity: 1s linear }
+
+	h1 {animation: example 5s ease infinite;
+		  ;
+	}
+
+
+	@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
 
 .menu{max-width:31.18796%;
 height: 300px;
@@ -62,15 +78,16 @@ transition: opacity: 1s linear;
 
 .promote{max-width:1000px; 
 justify-content: center;
-float: left;
+float: left; padding: 10px;
 }
 
 .anh1{max-width: 95%;
-	vertical-align: middle;
+
 height: 250px;
 }
-
-.anh2:hover { width: 50%; }
+.anh2{width: 100%;}
+.km1:hover img{transform: scale(1.2); }
+.km2:hover img{transform: scale(0.8);}
 h1 {text-align: center;
 background-color: yellow ; 
 color: red;}
