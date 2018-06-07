@@ -3,7 +3,7 @@
 
 .head{position: relative;
 width: 100%}
-.wrap{width: 100%;
+.wrap-1{width: 100%;
 
 	background-color: #00000045;
 	height: 80px;
@@ -21,15 +21,16 @@ width: 100%}
 	position: absolute;
 	left: 100px;
 	z-index: 5;
+	background-color: #0000002e;
 
 
 height: 80px;
 margin: auto;
-color:black;
+
 
  }
 
-.banner{max-width: 100%;
+.banner{width: 100%;
 position: relative;}
 .banner img{width: 100%;}
 
