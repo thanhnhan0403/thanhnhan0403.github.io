@@ -17,7 +17,9 @@ width: 100%}
 	position: absolute;
 	top: 0;
 	left: 0;
+
 	z-index: 5;
+
 }
 
 .part1 {max-width: 1140px;
@@ -124,7 +126,8 @@ height: 50px;}
 }
 
 .wrap-3{max-width: 1140px;
-margin: auto}
+margin: auto;
+padding: 5px;}
 
 .menu_card > ul > li { list-style-type: none ;}
 .tool_1 { width: 100%;
