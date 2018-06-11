@@ -4,7 +4,8 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 
-
+#menu li {margin: 10px;
+border: 2px solid blue;}
 .banner img{width: 100%;}
 
 .intro{font-size: 20px;
@@ -73,7 +74,7 @@ font-size: 30px;
 opacity: 1;
 transition: opacity: 1s linear;
 }
-.menu:hover img{ opacity: 0.5;
+.menu:hover { opacity: 0.5;
 }
 
 .promote{max-width:1000px; 
