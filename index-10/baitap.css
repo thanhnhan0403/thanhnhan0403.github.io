@@ -35,10 +35,7 @@ height: 100%;}
     float: left;
     background-color: rgb(49, 45, 45);
     color: white; 
-<<<<<<< HEAD
     cursor: pointer;
-=======
->>>>>>> 1ca9911d2515d675e7dadcc0b569423a41e9786b
    
 }
 ul li { 
@@ -54,11 +51,7 @@ ul li {
 .sidebar img {width: 100%;
 }
 
-<<<<<<< HEAD
 .avatar { 
-=======
-.avartar { 
->>>>>>> 1ca9911d2515d675e7dadcc0b569423a41e9786b
     width: 100%;
     position: relative;
 }
@@ -79,37 +72,20 @@ ul li {
 .main{
     width: 80%;
     margin: auto;
-<<<<<<< HEAD
     margin-bottom: 20px;
-=======
->>>>>>> 1ca9911d2515d675e7dadcc0b569423a41e9786b
 }
 
 
 span {border-bottom: 3px solid red;}
 
-<<<<<<< HEAD
 .portfolio { font-size: 30px;
 padding: 10px;
 }
-=======
-.portfolio { font-size: 30%;}
->>>>>>> 1ca9911d2515d675e7dadcc0b569423a41e9786b
 
 
 .tool{
     border-bottom: 2px solid #9c9393;
     height: 60px;
-<<<<<<< HEAD
-    
-=======
-    padding-bottom: 5px;
->>>>>>> 1ca9911d2515d675e7dadcc0b569423a41e9786b
-
-}
- 
-.tool div { 
-<<<<<<< HEAD
     font-size: 20px;
     padding-top: 10px;
     text-align: center;
@@ -228,10 +204,3 @@ z-index: 5;}
 
 
 
-=======
-    width: 25%;
-    height: 60px;
-
-    float: left;
-}
->>>>>>> 1ca9911d2515d675e7dadcc0b569423a41e9786b
