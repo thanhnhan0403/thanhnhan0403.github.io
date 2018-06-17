@@ -36,6 +36,7 @@ height: 100%;}
     background-color: rgb(49, 45, 45);
     color: white; 
     cursor: pointer;
+    height: 2000px;
    
 }
 ul li { 
@@ -97,6 +98,12 @@ padding: 10px;
     float: left;
     z-index: 3;
 }
+
+
+.band{border-bottom: 2px solid red;
+z-index: 6;}
+
+
 .tool div {width: 25%;
     margin: auto;
 float: left;
@@ -207,16 +214,22 @@ height: 40px;}
     margin: auto;
     
 }
-        
-.multi div img{
+.multi div{
     height: 50px;
     max-width: 30%;
     float: left;
-    padding: 10px;
+    padding: 10px;}
     
+        
+.multi div img{
+    height: 100%;
+    max-width: 100%;
+    float: left;
+
     
 }
-.line{ border-left: 2px solid grey;
+.line{ border-left: 2px solid #80808073;
+    z-index: 5;
 }
  p {text-align: center;}
 
