@@ -1,0 +1,408 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.clock {
+    height: 600px;
+    width: 600px;
+    background-color: #e6e6a552;
+    border-radius: 50%;
+    font-size: 20px;
+    position: relative;
+    padding: 10px;
+    border: 20px solid pink;
+}
+
+.logo {
+    font-size: 40px;
+    color: red;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+.minute-container,
+.hour-container,
+.seconds-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hour {
+    background: #000;
+    height: 20%;
+    left: 48.75%;
+    position: absolute;
+    top: 30%;
+    transform-origin: 50% 100%;
+    width: 2.5%;
+    z-index: 9;
+}
+
+.minute {
+    background: #000;
+    height: 40%;
+    left: 49%;
+    position: absolute;
+    top: 10%;
+    transform-origin: 50% 100%;
+    width: 2%;
+    z-index: 9;
+}
+
+.seconds {
+    background: #000;
+    height: 45%;
+    left: 49.5%;
+    position: absolute;
+    top: 14%;
+    transform-origin: 50% 80%;
+    width: 1%;
+    z-index: 10;
+}
+
+.center {
+    background: #000;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 5%;
+    height: 5%;
+    z-index: 10;
+}
+
+.hour-mark li {
+    display: block;
+    width: .2em;
+    height: .6em;
+    background: #929394;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -.4em 0 0 -.1em;
+}
+
+.hour-mark li:first-child {
+    transform: rotate(30deg) translateY(-13.5em)
+}
+
+.hour-mark li:nth-child(2) {
+    transform: rotate(60deg) translateY(-13.5em)
+}
+
+.hour-mark li:nth-child(3) {
+    transform: rotate(120deg) translateY(-13.5em)
+}
+
+.hour-mark li:nth-child(4) {
+    transform: rotate(150deg) translateY(-13.5em)
+}
+
+.hour-mark li:nth-child(5) {
+    transform: rotate(210deg) translateY(-13.5em)
+}
+
+.hour-mark li:nth-child(6) {
+    transform: rotate(240deg) translateY(-13.5em)
+}
+
+.hour-mark li:nth-child(7) {
+    transform: rotate(300deg) translateY(-13.5em)
+}
+
+.hour-mark li:nth-child(8) {
+    transform: rotate(330deg) translateY(-13.5em)
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.hour-container {
+    animation: rotate 43200s infinite linear;
+}
+
+.minute-container {
+    animation: rotate 3600s infinite linear;
+}
+
+.seconds-container {
+    animation: rotate 60s infinite linear;
+}
+
+
+/*clock 1 */
+
+.clock1 {
+    height: 20%;
+    width: 20%;
+    background-color: #caca4252;
+    border-radius: 50%;
+    position: relative;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    ;
+}
+
+.minute-container1,
+.hour-container1,
+.seconds-container1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hour-mark1 li {
+    display: block;
+    width: .1em;
+    height: .3em;
+    background: #929394;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -.2em 0 0 -.1em;
+}
+
+.hour-mark1 li:first-child {
+    transform: rotate(30deg) translateY(-2.5em)
+}
+
+.hour-mark1 li:nth-child(2) {
+    transform: rotate(60deg) translateY(-2.5em)
+}
+
+.hour-mark1 li:nth-child(3) {
+    transform: rotate(120deg) translateY(-2.5em)
+}
+
+.hour-mark1 li:nth-child(4) {
+    transform: rotate(150deg) translateY(-2.5em)
+}
+
+.hour-mark1 li:nth-child(5) {
+    transform: rotate(210deg) translateY(-2.5em)
+}
+
+.hour-mark1 li:nth-child(6) {
+    transform: rotate(240deg) translateY(-2.5em)
+}
+
+.hour-mark1 li:nth-child(7) {
+    transform: rotate(300deg) translateY(-2.5em)
+}
+
+.hour-mark1 li:nth-child(8) {
+    transform: rotate(330deg) translateY(-2.5em)
+}
+
+.hour-container1 {
+    animation: rotate 43200s infinite linear;
+}
+
+.minute-container1 {
+    animation: rotate 3600s infinite linear;
+}
+
+.seconds-container1 {
+    animation: rotate 60s infinite linear;
+}
+
+
+/*   clock 2*/
+
+.clock2 {
+    height: 20%;
+    width: 20%;
+    background-color: #caca4252;
+    border-radius: 50%;
+    position: relative;
+    padding: 10px;
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+    ;
+}
+
+.minute-container2,
+.hour-container2,
+.seconds-container2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hour-mark2 li {
+    display: block;
+    width: .1em;
+    height: .3em;
+    background: #929394;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    s margin: -.2em 0 0 -.1em;
+}
+
+.hour-mark2 li:first-child {
+    transform: rotate(30deg) translateY(-2.5em)
+}
+
+.hour-mark2 li:nth-child(2) {
+    transform: rotate(60deg) translateY(-2.5em)
+}
+
+.hour-mark2 li:nth-child(3) {
+    transform: rotate(120deg) translateY(-2.5em)
+}
+
+.hour-mark2 li:nth-child(4) {
+    transform: rotate(150deg) translateY(-2.5em)
+}
+
+.hour-mark2 li:nth-child(5) {
+    transform: rotate(210deg) translateY(-2.5em)
+}
+
+.hour-mark2 li:nth-child(6) {
+    transform: rotate(240deg) translateY(-2.5em)
+}
+
+.hour-mark2 li:nth-child(7) {
+    transform: rotate(300deg) translateY(-2.5em)
+}
+
+.hour-mark2 li:nth-child(8) {
+    transform: rotate(330deg) translateY(-2.5em)
+}
+
+.hour-container2 {
+    animation: rotate 43200s infinite linear;
+}
+
+.minute-container2 {
+    animation: rotate 3600s infinite linear;
+}
+
+.seconds-container2 {
+    animation: rotate 60s infinite linear;
+}
+
+
+/*  clock 3 */
+
+.clock3 {
+    height: 20%;
+    width: 20%;
+    background-color: #caca4252;
+    border-radius: 50%;
+    position: relative;
+    padding: 10px;
+    position: absolute;
+    bottom: 30%;
+    left: 60%;
+    ;
+}
+
+.minute-container3,
+.hour-container3,
+.seconds-container3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hour-mark3 li {
+    display: block;
+    width: .1em;
+    height: .3em;
+    background: #929394;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    s margin: -.2em 0 0 -.1em;
+}
+
+.hour-mark3 li:first-child {
+    transform: rotate(30deg) translateY(-2.5em)
+}
+
+.hour-mark3 li:nth-child(2) {
+    transform: rotate(60deg) translateY(-2.5em)
+}
+
+.hour-mark3 li:nth-child(3) {
+    transform: rotate(120deg) translateY(-2.5em)
+}
+
+.hour-mark3 li:nth-child(4) {
+    transform: rotate(150deg) translateY(-2.5em)
+}
+
+.hour-mark3 li:nth-child(5) {
+    transform: rotate(210deg) translateY(-2.5em)
+}
+
+.hour-mark3 li:nth-child(6) {
+    transform: rotate(240deg) translateY(-2.5em)
+}
+
+.hour-mark3 li:nth-child(7) {
+    transform: rotate(300deg) translateY(-2.5em)
+}
+
+.hour-mark3 li:nth-child(8) {
+    transform: rotate(330deg) translateY(-2.5em)
+}
+
+.hour-container3 {
+    animation: rotate 43200s infinite linear;
+}
+
+.minute-container3 {
+    animation: rotate 3600s infinite linear;
+}
+
+.seconds-container3 {
+    animation: rotate 60s infinite linear;
+}
