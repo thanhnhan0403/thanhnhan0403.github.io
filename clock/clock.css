@@ -1,42 +1,44 @@
+<
 *{box-sizing: border-box;
 	padding:0;
 	margin:0;}
 
 
-.clock{
-	height: 600px;
-	width: 600px;
-	background-color: #e6e6a552;
-	border-radius: 50%;
-	font-size: 20px;
-	position: relative;
-  padding: 10px;
-  border: 10px solid pink;
-
+.clock {
+    height: 600px;
+    width: 600px;
+    background-color: #e6e6a552;
+    border-radius: 50%;
+    font-size: 20px;
+    position: relative;
+    padding: 10px;
+    border: 20px solid pink;
 }
 
 
-.top {position: absolute;
-	top: 0;
-	left: 50%;
-	}
 
-.left {position: absolute;
-	top: 50%;
-	left: 0;
-	
-	}
+.top {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
 
-.right
- {position: absolute;
-	top: 50%;
-	right: 0;
-	}
+.left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
 
 .bottom {
-	position: absolute;
-	bottom: 0;
-	left:50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
 }
 .logo{position: absolute;
 top: 20%;
@@ -45,15 +47,18 @@ font-size: 40px;
 color: red;
 }
 
-.minute-container, .hour-container, .seconds-container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.minute-container,
+.hour-container,
+.seconds-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .hour {
+
   background: #000;
   height: 20%;
   left: 48.75%;
@@ -61,27 +66,38 @@ color: red;
   top: 30%;
 
   width: 2.5%;
-}
-.minute {
-  background: #000;
-  height: 40%;
-  left: 49%;
-  position: absolute;
-  top: 10%;
-  transform-origin: 50% 100%;
-  width: 2%;
+
+    background: #000;
+    height: 20%;
+    left: 48.75%;
+    position: absolute;
+    top: 30%;
+    transform-origin: 50% 100%;
+    width: 2.5%;
+    z-index: 9;
+
 }
 
-.seconds {
-  background: #000;
-  height: 45%;
-  left: 49.5%;
-  position: absolute;
-  top: 14%;
-  transform-origin: 50% 80%;
-  width: 1%;
-  z-index: 8;
+.minute {
+    background: #000;
+    height: 40%;
+    left: 49%;
+    position: absolute;
+    top: 10%;
+    transform-origin: 50% 100%;
+    width: 2%;
+    z-index: 9;
 }
+
+.seconds{
+    background: #000;
+    height: 45%;
+    left: 49.5%;
+    position: absolute;
+    top: 14%;
+    transform-origin: 50% 80%;
+    width: 1%;
+    z-index: 10;}
 
 
 .center{ background: #000;
@@ -151,6 +167,9 @@ left: 50%;
 transform: translate(-50%, -50%);}
 
 
+
+
+
 /*clock 1 */
 
 
@@ -163,19 +182,21 @@ transform: translate(-50%, -50%);}
 	position: relative;
 	padding: 10px;
   position: absolute;
-  top: 35%;
-  left: 15%;
-  border: 3px solid #d2b5d0
+  top: 30%;
+  left: 10%;
+  border: 3px solid #d2b5d0}
 
+.minute-container1,
+.hour-container1,
+.seconds-container1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
-.minute-container1, .hour-container1, .seconds-container1 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
+
 
 
   .hour-mark1 li {
@@ -224,7 +245,10 @@ z-index: 5;}
 z-index: 5;}
 
 
+
+
 /*   clock 2*/
+
 
 .clock2{
 	height: 30%;
@@ -235,20 +259,23 @@ z-index: 5;}
 	position: relative;
 	padding: 10px;
   position: absolute;
-  left : 35%;
+  left : 33%;
   bottom: 10%;
   border: 3px solid #d2b5d0
 ;
-
 }
 
-.minute-container2, .hour-container2, .seconds-container2 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.minute-container2,
+.hour-container2,
+.seconds-container2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
+
+
 
 
 
@@ -297,8 +324,8 @@ z-index: 5;}
   top:10%; left:25%;
 z-index: 5;}
 
-
 /*  clock 3 */
+
 
 
 	.clock3 {
@@ -309,20 +336,24 @@ z-index: 5;}
     position: relative;
     padding: 10px;
     position: absolute;
-    bottom: 35%;
+    bottom: 37%;
     left: 55%;
-    border: 3px solid #d2b5d0
+    border: 3px solid #d2b5d0;}
 
 
+.minute-container3,
+.hour-container3,
+.seconds-container3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
-.minute-container3, .hour-container3, .seconds-container3 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
+
+
+
 
 
 
@@ -370,3 +401,4 @@ z-index: 5;}
   transform:rotate(330deg) ; position:absolute;
   top:10%; left:25%;
 z-index: 5;}
+
