@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+
+}
+
+.main-menu{
+    width: 80%;
+    margin: auto;
+   
+}
+
+#menu{
+    width: 70%;
+    float: left;
+}
+
+
+.logo{
+    widows: 10%;
+    float: right;
+}
+
+ .logo img {
+    width: 100%;
+ }
+
