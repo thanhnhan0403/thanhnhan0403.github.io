@@ -235,3 +235,8 @@ input {
     width: 80%;
     float: right;
 }
+
+footer {
+    margin: auto;
+    width: 90%;
+}

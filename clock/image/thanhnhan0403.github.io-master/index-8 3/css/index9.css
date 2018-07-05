@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    ;
+    box-sizing: border-box;
+    background-color: bisque
+}
+
+.banner {
+    width: 100%
+}
+
+.intro {
+    font-size: 40px;
+    position: relative;
+    color: brown;
+}
+
+.menu {
+    max-width: 31.18796%;
+    height: 300px;
+    float: left;
+    padding: 10px;
+    color: pink;
+    font-size: 30px;
+    opacity: 1;
+    transition: opacity: 1s linear;
+}
+
+.menu:hover img {
+    opacity: 0.5;
+}
+
+#menu {
+    width: 1000px;
+    height: 100px;
+    padding: 10px;
+}
+
+#menu>li {
+    float: left;
+    list-style-type: none;
+}
+
+#menu>li>ul {
+    display: none;
+    padding: 10px;
+}
+
+#menu>li:hover>ul {
+    display: block;
+}
+
+#menu li {
+    list-style-type: none;
+}
+
+.intro a:hover {
+    color: green;
+}
+
+.intro a:active {
+    color: yellow;
+}
+
+.intro a:visited {
+    color: pink;
+}
+
+.logo {
+    width: 10%;
+    position: absolute;
+    top: -95px;
+    left: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.anh1 {
+    max-width: 95%;
+    vertical-align: middle;
+    height: 250px;
+}
+
+.thumb1 img {
+    transition: all 0.5s linear
+}
+
+.thumb1:hover {
+    transition: scale(2);
+}
+
+.thumb2 {
+    padding: 5px;
+    transition: all 0.5s ease;
+}
+
+.thumb2:hover {
+    transform: translate(0, -10px);
+}
+
+.promote {
+    max-width: 1000px;
+    justify-content: center;
+    float: left;
+}

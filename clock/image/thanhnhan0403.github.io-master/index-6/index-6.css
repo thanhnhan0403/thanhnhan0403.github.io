@@ -1,0 +1,72 @@
+h1{color: red}
+h2{color:green}
+img { width: 30%; 
+    height: 300px;
+<<<<<<< HEAD
+    padding: 10px  
+}
+.banner{width: 100%;
+}
+*{max-width: 1000px; margin: auto;}
+* {
+    box-sizing: border-box;
+}
+a {font-size: 30px; margin: 10px ;
+=======
+    
+}
+.banner{width: 100%;
+}
+
+*{max-width: 1000px; }
+* {
+    box-sizing: border-box;
+}
+a {font-size: 30px;
+>>>>>>> 85f9f4f26028db48b42792ea3eb1a35f3c322087
+
+}
+a: link{color: red}
+a:hover{color: aquamarine}
+a: :visited{color: green}
+a: :active{color : pink}
+.menu { background-color: yellowgreen;
+<<<<<<< HEAD
+padding: 10px, margin: 10px; float: right;
+}
+.menu {position: absolute;
+top: 0
+left: 0;
+}
+.h3{position: relative}
+#than { ;max-width: 80%;
+float: right; }
+#than > h2:first-child {position: relative;}
+.no-float {clear: both;}
+
+=======
+width: 15%; float: left;
+}
+#pos{font-size: 40px;
+background-color: yellow;
+position: relative;
+
+}
+
+
+.menu{position: absolute;
+position: absolute;
+    top: 70px;
+    left: 30px;}
+
+#than {width: 80%; float: right;}
+>>>>>>> 85f9f4f26028db48b42792ea3eb1a35f3c322087
+#top{
+    position: fixed;
+    right:0;
+    bottom: 0}
+    #top img{ height: 100px;
+    width: 100px;}
+    
+
+   
