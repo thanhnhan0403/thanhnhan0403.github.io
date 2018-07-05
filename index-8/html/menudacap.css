@@ -18,13 +18,14 @@ header {
 }
 
 #menu {
-    width: 70%;
+    width: 90%;
     float: left;
     list-style-type: none;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 10;
+    height: 100%;
 }
 
 #menu>li {
@@ -41,42 +42,40 @@ header {
 a {
     text-decoration: none;
     color: yellow;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
+
+}
 #menu>li>ul {
     list-style-type: none;
     display: none;
     background-color: red;
 }
-
 #menu>li>ul>li {
     border: 2px solid black;
 }
-
 #menu li:hover>ul {
     display: block;
 }
-
 .logo {
     width: 10%;
     float: right;
 }
-
 .logo img {
     width: 100%;
 }
-
 .banner {
     width: 80%;
     margin: auto;
     position: relative;
 }
-
 .banner img {
     width: 100%;
     opacity: 0.8;
 }
-
 .slogan {
     font-size: 47px;
     position: absolute;
@@ -87,13 +86,12 @@ a {
     background-color: #808080cf;
     color: white;
     text-align: center;
+    padding: 10px 5px;
 }
-
 .intro {
     width: 80%;
     margin: auto;
 }
-
 h1 {
     text-align: center;
     width: 40%;
@@ -101,7 +99,6 @@ h1 {
     padding: 20px;
     color: orangered;
 }
-
 .intro-text {
     width: 50%;
     float: left;
@@ -109,49 +106,41 @@ h1 {
     text-align: justify;
     padding: 20px;
 }
-
 p {
     font-size: 25px;
 }
-
 .picture_intro {
     width: 50%;
     float: right;
 }
-
 .picture_intro img {
     width: 50%;
     float: left;
     height: 100%;
+    padding: 10px, 5px;
 }
-
 .picture_intro p {
     font-size: 20px;
     text-align: center;
     background-color: wheat;
 }
-
 h2 {
     width: 40%;
     color: red;
 }
-
 .clear {
     clear: both;
 }
-
 .content {
     width: 78%;
     float: right;
 }
-
 h3 {
     background-color: red;
     color: white;
     padding: 15px;
     font-size: 30px;
 }
-
 .card {
     width: 33%;
     float: left;
@@ -160,63 +149,59 @@ h3 {
     font-size: 20px;
     color: #4abd14;
     padding: 10px;
+    overflow: hidden;
 }
-
 .card img {
     width: 100%;
     height: 350px;
+    transition: 0.5s;
+    overflow: hidden;
 }
-
 .card img:hover {
     transform: scale(1.2);
 }
-
 aside {
     width: 20%;
     float: left;
     text-align: center;
     font-size: 20px;
+    overflow: hidden;
 }
-
 aside img {
     width: 100%;
+    transition: 0.5s;
+    overflow: hidden;
 }
-
 aside img:hover {
     transform: rotate(30deg);
 }
-
 .promotion {
     margin-top: 10px;
     background-color: peru;
 }
-
 .comment {
     width: 50%;
     float: left;
+    padding: 10
 }
-
 .contact {
     float: right;
     width: 50%;
     text-align: end;
 }
-
 h5 {
     font-size: 30px;
 }
-
 .box {
     width: 80%;
     float: left;
 }
-
 input {
     width: 100%;
     float: right;
     margin-top: 10px;
+    padding: 10px 5px;
 }
-
 .button {
     width: 30%;
     text-align: center;
@@ -226,16 +211,13 @@ input {
     margin-top: 20px;
     height: 30px;
 }
-
 .note {
     height: 100px;
 }
-
 .contact img {
     width: 80%;
     float: right;
 }
-
 footer {
     margin: auto;
     width: 90%;
