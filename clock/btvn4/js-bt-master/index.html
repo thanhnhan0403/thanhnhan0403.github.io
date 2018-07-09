@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+
+<body>
+    <script>
+        function getDate(day) {
+            switch (day) {
+                case 0:
+                    return 'Sunday';
+                    break;
+                case 1:
+                    return 'Monday';
+                    break;
+                case 2:
+                    return 'Tuesday';
+                    break;
+                case 3:
+                    return 'Wed';
+                    break;
+                case 4:
+                    return 'Thursday';
+                    break;
+                case 5:
+                    return 'Friday';
+                    break;
+                case 6:
+                    return 'Saturday';
+                    break;
+
+            }
+        }
+
+        function getHour(gio) {
+            if (gio < 12) {
+                return `${gio}AM`;
+            } else if (gio == 12) {
+                return `${gio}PM`
+            } else {
+                return `${gio - 12}PM`;
+            }
+
+
+        }
+        function getCurrentTime() {
+            const ngayHienTai = new Date();
+            const thu = ngayHienTai.getDay();
+            let hours = ngayHienTai.getHours();
+            const minutes = ngayHienTai.getMinutes();
+            const seconds = ngayHienTai.getSeconds();
+            console.log('hours :', hours);
+            document.body.innerHTML = '';
+            document.write(` Today is: ${getDate(thu)} | current time is ${getHour(hours)} : ${minutes} : ${seconds}`)
+            return ` Today is: ${getDate(thu)} | current time is ${getHour(hours)} : ${minutes} : ${seconds}`
+
+
+        }
+        // setInterval(getCurrentTime,1000);
+
+        function remain(day, month) {
+            const ngayHienTai = new Date();
+            let ngayHT = ngayHienTai.getDate();
+            let thangHT = ngayHienTai.getMonth() + 1;
+
+            let namHT = ngayHienTai.getFullYear();
+            if (thangHT >= month && ngayHT > day) {
+                namHT += 1;
+                console.log('namHT :', namHT);
+            }
+
+            const ngayTiepTheo = new Date (namHT, month-1,day);
+            console.log('ngayTiepTheo :', ngayTiepTheo);
+            const soMiliGiayTrongNgay = 24*60*60*1000;
+            const tongThoiGianHT = ngayHienTai.getTime();
+            const tongThoiGianNgayTiepTheo = ngayTiepTheo.getTime();
+            const res = Math.ceil((tongThoiGianNgayTiepTheo-tongThoiGianHT)/soMiliGiayTrongNgay);
+            document.write(`Ngay ${day} thang ${month} tiep theo con ${res} ngay!`)
+            return res;
+
+
+
+
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
