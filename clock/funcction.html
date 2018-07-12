@@ -5,41 +5,88 @@
 </head>
 
 <body>
+
     <script>
-        var arr = [1, 2, 4, 6, 7, 8, 9, 10];
-        for (var i = 0; i < arr.length; i++) {
-            document.write("<p> phần tử thứ " + i + " là " +
-                arr[i] +
-                " </p>")
+        /*
+                                                                                                                        var arr = [1, 2, 4, 6, 7, 8, 9, 10];
+                                                                                                                        for (var i = 0; i < arr.length; i++) {
+                                                                                                                            document.write("<p> phần tử thứ " + i + " là " +
+                                                                                                                                arr[i] +
+                                                                                                                                " </p>")
+                                                                                                                        }
+
+                                                                                                                */
+
+        function bai1(x) {
+            return x * x;
+        }
+
+        function bai2(a, b, c) {
+            let k
+            k = (3 * a + 2 * b - c);
+            return k * k;
+        }
+
+        function bai3(str) {
+            let res;
+            res = str.substring(0, 10);
+            return res + "..."
+        }
+
+        function bai4(str) {
+            return str[0].toUpperCase() + str.slice(1).toLowerCase();
+        }
+
+        function bai5(arr) {
+            a = arr.sort(function(a, b) {
+                return a - b
+            });
+
+            return a;
+
+        }
+
+        function bai6(arr) {
+            var arr = ["Hào", "hương", "Nam", "Quyền", "Dương"];
+            arr.sort(function(a, b) {
+                return a - b
+            });
+            document.write(arr);
+            return arr;
+        }
+
+        // bài 7
+
+        var teacher = {
+            firstName: "Thanh",
+            lastName: "Hằng",
+            age: 36,
+            say: function() {}
         }
 
 
-        //fkfyjliy;o
-        function bai1(x){
-  return x*x;
-}
-
-function bai2(a,b,c){
-  let k
-  k = (3*a + 2*b -c);
-  return k*k;
-}
-function bai3(str){
-  let res;
-  res= str.substring(0,10);
-  return res + "..."
-}
-function bai4(str){
-  return str.charAt(0).toUpperCase() + str.slice(1);
-  
-}
-function(arr){
-  
-  
-}
+        var student = {
+            firstName: "Minh",
+            lastName: "Anh",
+            age: 16,
+            say: function() {};
+        }
 
 
+        var parent = {
+            firstName: "Hoàng",
+            lastName: "Hải",
+            age: 43,
+            say: function() {};
+        }
 
+        var aboutMe = function() {
+            document.write("xin chào, tôi là " + this.firstName + this.lastName + ". Năm nay tôi " + this.age + " tuổi.")
+        }
+
+        teacher.say = aboutMe;
+        parent.say = aboutMe;
+        student.say = aboutMe;
     </script>
 
 
