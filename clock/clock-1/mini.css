@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+.font {
+    width: 100%;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+}
+
+.logo {
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.text {
+    width: 60%;
+    background-color: #14151554;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    z-index: 3;
+    font-size: 50px;
+    color: white;
+    padding: 20px;
+}
+
+.item {
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: white
+}
+
+.item:hover {
+    color: #ffc107;
+}
+
+.slogan {
+    width: 60%;
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    z-index: 4;
+    background-color: #161ea959;
+}
+
+h1 {
+    font-size: 80px;
+    color: #ffc107;
+    text-align: center;
+}
+
+.program {
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 50px;
+    padding: 10px;
+    color: aqua;
+    text-align: center;
+}
+
+.program div:nth-child(5) {
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+.program div:nth-child(3) {
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+.talk {
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+}
+
+.talk_item {
+    width: 22%;
+    float: left;
+    padding: 10px;
+}
+
+.image {
+    width: 100%;
+}
+
+.name {
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+.ads {
+    width: 70%;
+    margin: auto;
+}
+
+h3 {
+    padding: 5px;
+}
+
+.ads_item {
+    width: 100%;
+    margin: auto;
+    background-color: aquamarine;
+}
+
+iframe {
+    width: 100%;
+}
+
+footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+    height: 50px;
+}
+
+button {
+    padding: 10px;
+    width: 15%;
+    margin: auto;
+    color: azure;
+    background-color: red;
+    height: 50px;
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    left: 45%;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
