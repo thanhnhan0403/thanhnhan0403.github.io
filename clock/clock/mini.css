@@ -63,7 +63,7 @@ img {
 
 h1 {
     font-size: 80px;
-    color: #ffc107;
+    color: #e6cf0c;
     text-align: center;
 }
 
@@ -76,10 +76,12 @@ h1 {
 h2 {
     font-size: 50px;
     padding: 10px;
-    color: aqua;
+    color: rgba(43, 16, 194, 0.74);
     text-align: center;
 }
 
+
+/*
 .program div:nth-child(5) {
     background-color: aquamarine;
     padding: 10px;
@@ -89,21 +91,59 @@ h2 {
     background-color: aquamarine;
     padding: 10px;
 }
+*/
+
+.card {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    height: 70px;
+}
+
+.time {
+    width: 20%;
+    float: left;
+    background-color: #a097576b;
+    height: 70px;
+}
+
+.card_text {
+    width: 80%;
+    float: left;
+    background-color: beige;
+    height: 70px;
+}
+
+.time p {
+    padding: 17px;
+}
 
 .talk {
-    width: 80%;
+    width: 100%;
     padding: 10px;
     margin: auto;
+    box-sizing: border-box;
 }
 
 .talk_item {
     width: 22%;
     float: left;
     padding: 10px;
+    height: 80%;
 }
 
 .image {
     width: 100%;
+}
+
+.image img {
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.image img:hover {
+    transform: translate(-10px, -10px)
 }
 
 .name {
@@ -114,6 +154,27 @@ h2 {
 
 .clear {
     clear: both;
+}
+
+.picture {
+    width: 90%;
+    margin: auto;
+}
+
+.anh {
+    width: 33%;
+    float: left;
+    height: 400px;
+    overflow: hidden;
+}
+
+.anh img {
+    overflow: hidden;
+    transition: 1s;
+}
+
+.anh :hover {
+    transform: scale(1.2);
 }
 
 .ads {
@@ -131,16 +192,16 @@ h3 {
     background-color: aquamarine;
 }
 
-iframe {
-    width: 100%;
-}
-
 footer {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
     position: relative;
     height: 50px;
+}
+
+iframe {
+    width: 100%;
 }
 
 button {
@@ -159,4 +220,5 @@ button {
 button a {
     color: white;
     text-decoration: none;
+    font-size: 30px;
 }
