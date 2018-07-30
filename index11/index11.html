@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="index11.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <title>Project</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="logo">
+                <img src="https://techmaster.vn/img/logo-to-share.png" alt="">
+            </div>
+            <div class="menu-tool">
+                <div class="menu-item">
+                    <a href="">Trang chủ</a></div>
+                <div class="menu-item">
+                    <a href="">Khoa học</a></div>
+                <div class="menu-item">
+                    <a href="">Thực tập</a></div>
+                <div class="menu-item">
+                    <a href="">Lịch khai giảng</a></div>
+                <div class="menu-item">
+                    <a href="">Blog</a></div>
+                <div class="menu-item">
+                    <a href="">Phỏng vấn</a></div>
+                <div class="menu-item">
+                    <a href="">Việt làm</a></div>
+                <div class="menu-item">
+                    <a href="">Chúng tôi</a></div>
+            </div>
+        </div>
+
+        <div class="search">
+            <div class="search-item">
+                <div class="icon"><i class="fas fa-search"></i></div>
+                <input placeholder="Gõ từ khóa tìm kiếm" type="text">
+            </div>
+            <div class="search-item-2">
+                <a href="">
+                    <button>Danh mục bài viết</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="addendum">
+            <div class="actor">
+
+            </div>
+
+
+            <div class="addendum">
+                <div class="addendum-item"><a href="">1. Spread operator</a></div>
+                <div class="addendum-item"><a href="">2. for ... iterator</a></div>
+                <div class="addendum-item"><a href="">3. includes()</a></div>
+                <div class="addendum-item"><a href="">4. some()</a></div>
+                <div class="addendum-item"><a href="">4. some()</a></div>
+                <div class="addendum-item"><a href="">6. filter()</a></div>
+                <div class="addendum-item"><a href="">7. map()</a></div>
+                <div class="addendum-item"><a href="">8. reduce()</a></div>
+                <div class="addendum-item">
+                    <a href=""></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="content-item">
+                <h1>Những phương thức JavaScript sẽ nâng cao kỹ năng của bạn trong vài phút</h1>
+                <P>Hầu hết các ứng dụng chúng ta xây dựng hằng ngày đều yêu cầu thu thập, sửa đổi dữ liệu. Xử lý các item trong một mảng là một hoạt động phổ biến nhất mà bạn sẽ gặp phải. Hãy quên cách thông thường để làm for-loop như (let i; i
+                    < arr.length; i++).<br>
+
+
+
+                        Giả sử bạn muốn hiển thị danh sách sản phẩm và phân loại, lọc, tìm kiếm, sửa đổi hoặc cập nhật một collection. Hoặc có lẽ bạn muốn làm các phép tính nhanh như phép tính tổng, phép nhân... Cách tối ưu để đạt được điều này là gì?<br>                        Có lẽ bạn không thích <span>arrow functons</span> , bạn không muốn dành thời gian để học một vài điều mới hoặc những điều đó không thích hợp với bạn. Đừng lo lắng, tôi sẽ cho bạn thấy nó thưc hiện như thế nào trong ES5 (functional
+                        declaration) và ES6 (arrow functions).<br>
+
+
+
+                        <b> Lưu ý:</b> Arrow function và function declarations, hai biểu thức này không tương đương nhau và không thể thay thế nhau một cách "mù quáng". Hãy giữ trong '"trí nhớ" của bạn rằng từ khóa this biểu thị sự khác nhau giữa chúng.
+                </P>
+                <ol>Các phương thức chúng ta sẽ xem xét/ tìm hiểu
+                    <li>Spread operator</li>
+                    <li>for ... of iterator</li>
+                    <li>includes()</li>
+                    <li>some()</li>
+                    <li>every()</li>
+                    <li>filter()</li>
+                    <li>map()</li>
+                    <li>reduce()</li>
+                </ol>
+                <div class="box">
+                    <div class="icon_box"></div>
+                    <p class="dd">Nếu bạn muốn trở thành nhà phát triển web tốt hơn, bắt đầu công việc riêng của bạn, dạy những người khác hoặc cải thiện phát triển các kỹ năng của bạn. Hàng tuần tôi sẽ đăng tải các mẹo, thủ thuật về web-development.</p>
+                </div>
+
+            </div>
+
+
+            <div class="content-item" id="1">
+                <h2>1. Spread operator</h2>
+                <p> <b>Spread operator</b> phân tách một mảng thành các phần tử của nó. Nó có thể được sử dụng cho các object literal.</p>
+                <ul>Tại sao tôi nên sử dụng nó</ul>
+                <li>Nó đơn giản và nhanh gọn cho việc hiển thi các item trong một mảng</li>
+                <li>Nó hoạt động cho các array và các object literal</li>
+                <li>Là một cách nhanh chóng và trực quan để truyền các đối số</li>
+                <li>Nó chỉ cần dùng ba dấu chấm ...</li>
+                <h3>ví dụ:</h3>
+                <p>Nếu bạn muốn hiển thị một danh sách các loại thức ăn yêu thích mà không cần dùng đến vòng lặp. Sử dụng spread operator như sau:
+
+                </p>
+                <code class="language-javascript hljs">
+                    <span class="hljs-keyword">const</span>  
+                    favoriteFood = [<span class="hljs-string">'Pizza'</span>, 
+                    <span class="hljs-string">'Fries'</span> , 
+                    <span class="hljs-string">'Swedish-meatballs'</span>]; 
+                    <span class="hljs-built_in">console</span>
+                    .log(...favoriteFood);
+                    <span class="hljs-comment">//Pizza Fries Swedish-meatballs</span>
+
+
+                    
+                </code>
+
+            </div>
+            <div class="content-item" id="2">
+                <h2>2. for...of iterator</h2>
+                <p> <b>for...of</b>câu lệnh vòng lặp/ lặp lại qua các collection, và cung cấp cho bạn khả năng chỉnh sửa các item chỉ định, Nó thanh thế cách thông thường để thực hiện một for-loop.
+
+                </p>
+                <ul>Tại sao tôi nên sử dụng nó?
+                    <li>Nó rất đơn giản để thêm hay update một item</li>
+                    <li>Biểu diễn các phép tính (phép tính tổng, phép tính nhân...)</li>
+                    <li>hi sử dụng các câu lệnh có điều kiện (if, while, switch)</li>
+                    <li>Ngắn gọn và dễ đọc</li>
+                </ul>
+                <h3>ví dụ: </h3>
+                <p>Giả sử bạn có một toolbox, và bạn muốn hiện ra các công cụ bên trong nó. For...of iterator dễ dàng làm được điều đó</p>
+            </div>
+
+            <code class="language-javascript hljs">
+                    <span class="hljs-keyword">const</span>  
+                    toolBox = [<span class="hljs-string">'Hammer'</span>, 
+                    <span class="hljs-string">'Screwdriver'</span> , 
+                    <span class="hljs-string">'Ruler'</span>]; 
+                    <span class="hljs-keyword">for</span>  (item of toolBox){}
+                    <span class="hljs-built_in">console</span>
+                    .log(item);
+                    }
+                    <span class="hljs-comment">
+                    //Hammer<br>
+                    // Screwdriver<br>
+                    // Ruler
+                    </span>
+                    
+                </code>
+
+
+            <div class="content-item" id="3">
+                <h2>3. Phương thức Includes()</h2>
+                <p> Phương thức<b>Includes()</b>được sử dụng để kiểm tra một chuỗi cụ thể có tồn tại trong một collection hay không, và kết quả trả về là <i>true</i> hoặc <i>false</i>. Hãy ghi nhớ trường hợp này: nếu item bên trong collection là <i>SCHOOL</i>                    và bạn search là <i>school</i> thì kết quả trả về là <i>false.</i>
+
+                </p>
+                <ul>Tại sao tôi nên sử dụng nó?
+                    <li>Xây dựng một chức năng search đơn giản</li>
+                    <li>Đó là cách tiếp cận trực quan để xem phần tử có tồn tại hay không</li>
+                    <li>Nó sử dụng các câu lệnh để sửa đổi, lọc...</li>
+                    <li>Dễ dàng đọc code</li>
+                </ul>
+                <h3>ví dụ: </h3>
+                <p>Giả sử, vì một lý do nào đó khiến bạn không biết có những chiếc xe nào ở trong gara và bạn cần một hệ thống để kiểm tra xem chiếc xe bạn muốn có tồn tại trong gara hay không. Includes() sẽ giúp bạn.
+
+                </p>
+            </div>
+            <div class="content-item" id="4">
+                <h2>4. Phương thức some()</h2>
+                <p>Phương thức <b>some()</b>kiểm tra một số phần tử tồn tại trong một mảng hay không và trả về true hoặc false. Điều này hơi giống với phương thức <b>includes()</b> ngoại trừ đối số là một hàm chứ không phải là một chuỗi.</p>
+                <ul>Tại sao tôi nên sử dụng nó?
+                    <li>Nó đảm bảo một số item vượt qua điều kiện test</li>
+                    <li>Nó thực hiện các câu lệnh điều kiện bằng cách sử dụng function</li>
+                    <li>Some() đủ tốt để sử dụng</li>
+                </ul>
+                <h3>ví dụ: </h3>
+
+                <p>Giả sử bạn là chủ sở hữu một club và bạn muốn kiểm tra một nhóm người có thành viên nào dưới 18 tuổi hay không (không cho phép người chưa trưởng thành vào). Sử dụng <b> some() </b> theo hai chuẩn ES5 và ES6.</p>
+            </div>
+            <div class="content-item" id="5">
+                <h2>5. Phương thức every()</h2>
+                <p>Phương thức <b>every()</b> lặp qua mảng, kiểm tra mỗi item và trả về <i>true</i> hoặc <i>false.</i> Tương tự như cấu trúc của <b>some()</b> ngoại trừ mỗi item phải vượt qua điều kiện kiểm tra nếu không sẽ trả về là <i>false</i>.</p>
+                <ul>Tại sao tôi nên sử dụng nó?
+                    <li>Đảm bảo tất cả các item được kiểm tra</li>
+                    <li>Bạn có thể sử dụng trong các câu điều kiện.</li>
+                </ul>
+                <h3>ví dụ: </h3>
+                <p>Cũng giống như ví dụ ở phương thức some(). Bạn kiểm tra xem tất cả những người vào club có độ tuổi trên 18 hay không, nếu tất cả trên 18 thì được phép vào. Nếu một trong những người đó không đủ 18 tuổi thì không được phép vào.</p>
+            </div>
+            <div class="content-item" id="6">
+                <h2>6. Phương thức filter()</h2>
+                <p> Phương thức <b>filter()</b> tạo ra một mảng mới gồm các phần tử của mảng ban đâu vượt qua điều kiện kiểm tra.</p>
+                <ul>Tại sao tôi nên sử dụng nó?
+                    <li>Bạn sẽ tránh được việc thay đổi giá trị của mảng chính</li>
+                    <li>Cho phép bạn "lọc" ra các phần tử mà bạn không cần</li>
+                    <li>Giúp code của bạn rõ ràng, dễ đọc</li>
+
+                </ul>
+                <h3>ví dụ: </h3>
+                <p>Giả sử bạn chỉ muốn lấy ra những phần tử có giá lớn hơn hoặc bằng 30. Filter() sẽ giúp bạn dễ dàng</p>
+
+            </div>
+            <div class="content-item" id="7">
+                <h2>7. Phương thức map()</h2>
+                <p> Phương thức <b>map()</b> giống phương thức filter() ở vấn đề là kết quả trả về là một mảng. Tuy nhiên điểm khác biệt là nó có thể chỉnh sửa các item trong mảng đó.
+
+                </p>
+                <ul>Tại sao tôi nên sử dụng nó?
+                    <li>Bạn không phải chỉnh sửa, thay đổi mảng gốc</li>
+                    <li>Bạn có thể thay đổi giá trị các item nếu bạn muốn</li>
+                    <li>Giúp code của bạn rõ ràng, dễ đọc</li>
+
+                </ul>
+                <h3>ví dụ: </h3>
+                <p>Giả sử bạn có một danh sách các sản phầm cùng với giá của chúng. Người quản lý của bạn muốn có một danh sách để hiển thị giá mới của các sản phẩm đó sau khi bị tính thuế 25%. Phương thức map() dễ dàng giúp bạn</p>
+            </div>
+
+            <div class="content-item" id="7">
+                <h2>7. Phương thức reduce()</h2>
+                <p> Phương thức <b>reduce() </b> ấy tổng các số trong một mảng. Nói cách khác nó "reduce" các giá trị của mảng thành một giá trị. Thường được sử dụng trong tính toán.</p>
+                <ul>Tại sao tôi nên sử dụng nó?
+                    <li>BTính tổng hoặc trung bình cộng</li>
+                    <li>Đó là cách nhanh chóng để thực hiện các phép tính</li>
+
+                </ul>
+                <h3>ví dụ: </h3>
+                <p>GGiả sử bạn muốn tính tổng chi phí của mình trong một tuần. Reduce() sẽ được sử dụng như sau:</p>
+            </div>
+
+            <p>Bài viết được dịch từ medium.freecodecamp.org</p>
+            <p>Đăng ký thực tập Web front-end tại: http://bit.ly/2GTgkky </p>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-item"></div>
+        <div class="footer-item"></div>
+        <div class="footer-item"></div>
+        <div class="footer-item"></div>
+    </footer>
+
+
+</body>
+
+</html>

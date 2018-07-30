@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link type="text/css" rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <p class="text1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ut eum ducimus distinctio, inventore voluptas reprehenderit officia. Ea eaque dolores voluptatum perferendis minima sequi ullam tempore cumque, harum blanditiis quo Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Ad ut eum ducimus distinctio, inventore voluptas reprehenderit officia. Ea eaque dolores voluptatum perferendis minima sequi ullam tempore cumque, harum blanditiis quo Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Ad ut eum ducimus distinctio, inventore voluptas reprehenderit officia. Ea eaque dolores voluptatum perferendis minima sequi ullam tempore cumque, harum blanditiis quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ut eum ducimus
+        distinctio, inventore voluptas reprehenderit officia. Ea eaque dolores voluptatum perferendis minima sequi ullam tempore cumque, harum blanditiis quo.
+    </p>
+    <p class="text2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ut eum ducimus distinctio, inventore voluptas reprehenderit officia. Ea eaque dolores voluptatum perferendis minima sequi ullam tempore cumque, harum blanditiis quo Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Ad ut eum ducimus distinctio, inventore voluptas reprehenderit officia. Ea eaque dolores voluptatum perferendis minima sequi ullam tempore cumque, harum blanditiis quo Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Ad ut eum ducimus distinctio, inventore voluptas reprehenderit officia. Ea eaque dolores voluptatum perferendis minima sequi ullam tempore cumque, harum blanditiis quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ut eum ducimus
+        distinctio, inventore voluptas reprehenderit officia. Ea eaque dolores voluptatum perferendis minima sequi ullam tempore cumque, harum blanditiis quo. </p>
+    <p class="text3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ut eum ducimus distinctio, inventore voluptas reprehenderit officia. Ea eaque dolores voluptatum perferendis minima sequi ullam tempore cumque, harum blanditiis quo Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Ad ut eum ducimus distinctio, inventore voluptas reprehenderit officia. Ea eaque dolores voluptatum perferendis minima sequi ullam tempore cumque, harum blanditiis quo Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Ad ut eum ducimus distinctio, inventore voluptas reprehenderit officia. Ea eaque dolores voluptatum perferendis minima sequi ullam tempore cumque, harum blanditiis quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ut eum ducimus
+        distinctio, inventore voluptas reprehenderit officia. Ea eaque dolores voluptatum perferendis minima sequi ullam tempore cumque, harum blanditiis quo.
+    </p>
+    <script>
+        function changeFontSize(x) {
+            let text = document.querySelectorAll('[class*="text"]');
+            text.forEach(e => e.style.fontSize = `${x}px`);
+        }
+        // 1 :doan van 1
+        // 2 :doan van 2
+        // 3 : oan van 3
+        function increaseFontSize(p = 1) {
+            let text = document.querySelector(`.text${p}`);
+            let currentFontSize = window.getComputedStyle(text, null).getPropertyValue('font-size');
+            let fontSize = parseInt(currentFontSize.replace(/\D/g, ''), 10);
+            if (fontSize >= 30) return;
+            else fontSize++;
+            text.style.fontSize = `${fontSize}px`;
+        }
+        // 1 :doan van 1
+        // 2 :doan van 2
+        // 3 : oan van 3
+        function decreaseFontSize(p = 1) {
+            let text = document.querySelector(`.text${p}`);
+            let currentFontSize = window.getComputedStyle(text, null).getPropertyValue('font-size');
+            let fontSize = parseInt(currentFontSize.replace(/\D/g, ''), 10);
+            if (fontSize <= 10) return;
+            else fontSize--;
+            text.style.fontSize = `${fontSize}px`;
+        }
+
+        function changeColor() {
+            let text = document.querySelectorAll('[class*="text"]');
+            color = ["blue", "yellow", "red"];
+            let i = 0;
+            text.forEach(e => e.style.color = `${color[i++]}`);
+        }
+
+        function changeBgColor(color) {
+            let Color = color.toString();
+            let body = document.querySelector('body');
+            body.style.backgroundColor = Color;
+        }
+        // 1 :doan van 1
+        // 2 :doan van 2
+        // 3 : oan van 3
+        function copyContent(p1 = 1, p2 = 2) {
+            let text1 = document.querySelector(`.text${p1}`);
+            let text2 = document.querySelector(`.text${p2}`);
+            text1.innerHTML = text2.innerHTML;
+        }
+    </script>
+</body>
+
+</html>

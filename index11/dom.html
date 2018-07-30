@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dom</title>
+    <style>
+        .main {
+            border: 2px solid red;
+            max-width: 1000px;
+            margin: auto;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <p id="p1" class="para">
+            <img src="https://img.elephantjournal.com/wp-content/uploads/2015/05/958px-We_believe_in_a_thing_called_love-200x200.jpg" alt=""> Trên không, vài con cò về tổ trễ đập nhanh đôi cánh trắng phau rồi khuất trong lùm cây rậm lá. Những đám mây
+            trắng đá ngả màu ngà, bầu trời xanh cũng đã ngả sang màu sậm đưa đến màu đen. Đâu đó có tiếng chim lẻ bạn, tiếng dơi muỗi lào xào lẫn trong tiếng gió nhẹ lay cành. Dưới bến sông, con nước ròng lên đầy mé đã đứng lại không lùa được những đợt
+            lục bình lờ lững giữa dòng ra sông cái. Dòng nước xanh chìm đi trong màu xám sậm và những bóng cây bên bờ kia ngả xuống dòng càng lúc càng hiện rõ lù lù thành hàng trong bóng nước.</p>
+        <p id="p2" class="para">Mặt trăng tròn vành vạnh từ từ nhô lên sau luỹ tre. Trăng đêm nay sáng quá! Bầu trời điểm xuyết một vài ngôi sao lấp lánh như những con đom đóm nhỏ. Ánh trăng tàng dịu mát tỏa xuống, chảy loang lổ trên mặt đất, trên các cành cây ngọn cỏ … Không
+            gian mới yên tĩnh làm sao! Chỉ còn tiếng sương đêm rơi lốp bốp trên lá cây và tiếng côn trùng ra rả trong đất ẩm. Chị gió chuyên cần nhẹ nhàng bay làm rung mấy ngọn xà cừ ven đường. Thoang thoảng đâu đây mùi hoa thiên lí dịu dàng lan tỏa…
+            Đêm trăng thật đẹp và êm đềm.</p>
+        <p id="p3" class="para">Thỉnh thoảng, những bóng cây xao động vì những chiếc xuồng con làm vỡ tan gương nước phẳng lì. Người đi xuống khuấy nhanh chiếc dầm để mau về đến nhà. Xa xa, tiếng ai hát ru còn gieo giọng buồn tản mát trên dòng sông lặng lẽ.</p>
+    </div>
+    <script>
+        var p1 = document.getElementById("p1");
+        var p2 = document.getElementById("p2");
+        var p3 = document.getElementById("p3");
+
+        function bai1(x) {
+
+            a = p1.style.fontSize = `${x}px`;
+            b = p2.style.fontSize = `${x}px`;
+            c = p3.style.fontSize = `${x}px`;
+
+
+            return a + b + c;
+        }
+
+        function bai2() {
+            for (i = 1; i <= 30; i++) {
+
+            }
+        }
+
+        function bai4() {
+            var a = p1.style.color = "green";
+            var b = p2.style.color = "red";
+            var c = p3.style.color = "yellow";
+            return a + b + c;
+        }
+
+
+
+        function bai5(color) {
+            a = document.querySelector("body");
+            a.style.background = `${color}`;
+
+        }
+
+        function bai6(copy) {
+            p1.innerHTML = p2.innerHTML;
+
+        }
+    </script>
+</body>
+
+</html>
