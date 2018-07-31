@@ -43,10 +43,15 @@
         }
 
         function bai2() {
-            for (i = 1; i <= 30; i++) {
-
-            }
+            let x = document.querySelectorAll(".para");
+            let y = window.getComputedStyle(x, null).getPropertyValue('font-size');
+            let fontSize = parseInt(y.replace(/\D/g, ''), 10);
+            if (fontSize >= 30) return;
+            else fontSize++;
+            x.style.fontSize = `${fontSize}px`;
         }
+
+
 
         function bai4() {
             var a = p1.style.color = "green";
