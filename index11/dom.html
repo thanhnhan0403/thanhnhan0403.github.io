@@ -31,7 +31,7 @@
         var p1 = document.getElementById("p1");
         var p2 = document.getElementById("p2");
         var p3 = document.getElementById("p3");
-
+        //bai1: change font size
         function bai1(x) {
 
             a = p1.style.fontSize = `${x}px`;
@@ -41,16 +41,40 @@
 
             return a + b + c;
         }
-
+        //bai2: tăng kích thước font size lên 1
         function bai2() {
-            let x = document.querySelectorAll(".para");
-            let y = window.getComputedStyle(x, null).getPropertyValue('font-size');
-            let fontSize = parseInt(y.replace(/\D/g, ''), 10);
-            if (fontSize >= 30) return;
-            else fontSize++;
-            x.style.fontSize = `${fontSize}px`;
+            let a = document.querySelectorAll("p");
+            for (i = 0; i <= a.length - 1; i++) {
+                b = a[i].style.fontSize;
+                b = parseInt(b);
+
+                if (b >= 30) {
+                    a[i].style.fontSize = b + 'px';
+
+                } else {
+                    a[i].style.fontSize = (b + 1) + 'px';
+                }
+            }
+
+        }
+        //bài 3: giảm kinh thước font size xuống 1
+        function bai3() {
+            let a = document.querySelectorAll("p");
+            for (i = 0; i <= a.length - 1; i++) {
+                b = a[i].style.fontSize;
+                b = parseInt(b);
+
+                if (b <= 10) {
+                    a[i].style.fontSize = b + 'px';
+
+                } else {
+                    a[i].style.fontSize = (b - 1) + 'px';
+                }
+            }
+
         }
 
+        // bài 4: style màu cho các đoạn văn
 
 
         function bai4() {
@@ -61,13 +85,13 @@
         }
 
 
-
+        //bài 5: thay đổi background-color
         function bai5(color) {
             a = document.querySelector("body");
             a.style.background = `${color}`;
 
         }
-
+        //bài 6: sao chép đoạn văn 
         function bai6(copy) {
             p1.innerHTML = p2.innerHTML;
 
