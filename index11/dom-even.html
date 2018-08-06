@@ -2,12 +2,16 @@
 <html lang="en">
 
 <head>
-
-    <title>Dom even</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DoM event </title>
+    <link rel="stylesheet" href="event.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 
 <body>
-<!--
+    <!--
     x= <input type="text" id="x"> <br/> y = <input type="text" id="y"><br/>
     <button onclick="sum()">sum</button>
     <p> x + y = <b id="result"></b> </p>
@@ -22,18 +26,59 @@
 
 
 -->
+    <main>
+        <!--
+        <div class="text">
+            <input type="text">
+            <div class="clear"></div>
+
+        </div>
+        -->
+        <div id="text">
+            <form name="calculator">
+                <span id="total">0</span>
+            </form>
+        </div>
+
+        <div class="number">
+            <button onclick="this" class="num" value="7">7</button>
+            <button onclick="this" class="num" value="8">8</button>
+            <button onclick="this" class="num" value="9">9</button>
+            <button onclick="this" class="num" value="4">4</button>
+            <button onclick="this" class="num" value="5">5</button>
+            <button onclick="this" class="num" value="6">6</button>
+            <button onclick="this" class="num" value="1">1</button>
+            <button onclick="this" class="num" value="2">2</button>
+            <button onclick="this" class="num" value="3">3</button>
+            <button onclick="this" class="num" value="0">0</button>
+            <button onclick="this" class="num" value=".">,</button>
+            <div class="clear"></div>
+
+        </div>
+
+        <div class="operation">
+            <button onclick="this" class="synax" value="C/E">C</button>
+            <button onclick="this" class="synax" value="&larr;">&larr;</button>
+            <button onclick="this" class="synax">X^2</button>
+            <button onclick="this" class="synax" value="+">+</button>
+            <button onclick="this" class="synax" value="-">-</button>
+            <button onclick="this" class="synax" value="">!</button>
+            <button onclick="this" class="synax" value="*">X</button>
+            <button onclick="this" class="synax" value="/">&divide;</button>
+            <button onclick="this" class="synax" value="&radic;">&radic;</button>
+            <button onclick="this" class="synax" value="=">=</button>
+            <button onclick="this" class="synax" value="1/x">%</button>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
 
 
 
 
-
-
-
-
-
-
+    </main>
 
 
 </body>
+<script></script>
 
 </html>
