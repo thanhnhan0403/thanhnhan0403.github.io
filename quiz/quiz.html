@@ -7,32 +7,56 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>quiz</title>
     <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
         #Q {
-            width: 70%;
+            width: 100%;
             margin: auto;
-            height: 100px;
+            height: 60px;
             background-color: blue;
             color: aliceblue;
             margin-bottom: 20px;
+        }
+        
+        .answer {
+            width: 70%;
+            margin: auto;
+            background-color: brown;
+        }
+        
+        .item {
+            width: 50%;
+            float: left;
+            height: 30px;
+            background-color: yellowgreen;
+        }
+        
+        .clear {
+            clear: both;
         }
     </style>
 </head>
 
 <body>
     <main>
-        <div class="item" id="Q"></div>
 
-        <div class="anwer">
 
-            <button class="item">A. </button>
-            <button class="item">B. </button>
-            <button class="item">C. </button>
-            <button class="item">D. </button>
+        <div class="answer">
+            <div class="item" id="Q"></div>
+            <button onclick="" class="item" id="a">A. </button>
+            <button class="item" id="b">B. </button>
+            <button class="item" id="c">C. </button>
+            <button class="item" id="d">D. </button>
+
+            <div class="clear"></div>
         </div>
     </main>
 
-    <script>
-    </script>
+    <script src="quiz.js"></script>
 </body>
 
 </html>
