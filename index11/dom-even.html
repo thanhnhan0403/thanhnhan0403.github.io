@@ -11,63 +11,42 @@
 </head>
 
 <body>
-    <!--
-    x= <input type="text" id="x"> <br/> y = <input type="text" id="y"><br/>
-    <button onclick="sum()">sum</button>
-    <p> x + y = <b id="result"></b> </p>
 
-    <script>
-        function sum() {
-            var x = document.getElementById("x").value;
-            var y = document.getElementById("y").value;
-            document.getElementById("result").innerHTML = Number(x) + Number(y);
-        }
-    </script>
-
-
--->
     <main>
-        <!--
-        <div class="text">
-            <input type="text">
-            <div class="clear"></div>
 
-        </div>
-        -->
-        <div id="text">
-            <form name="calculator">
-                <span id="total">0</span>
-            </form>
+        <div class="text">
+            <div class="name">Nancy's calculator</div>
+            <div id="kq"></div>
         </div>
 
         <div class="number">
-            <button onclick="this" class="num" value="7">7</button>
-            <button onclick="this" class="num" value="8">8</button>
-            <button onclick="this" class="num" value="9">9</button>
-            <button onclick="this" class="num" value="4">4</button>
-            <button onclick="this" class="num" value="5">5</button>
-            <button onclick="this" class="num" value="6">6</button>
-            <button onclick="this" class="num" value="1">1</button>
-            <button onclick="this" class="num" value="2">2</button>
-            <button onclick="this" class="num" value="3">3</button>
-            <button onclick="this" class="num" value="0">0</button>
-            <button onclick="this" class="num" value=".">,</button>
+            <button onclick="press(this)" class="num" value="7">7</button>
+            <button onclick="press(this)" class="num" value="8">8</button>
+            <button onclick="press(this)" class="num" value="9">9</button>
+            <button onclick="press(this)" class="num" value="4">4</button>
+            <button onclick="press(this)" class="num" value="5">5</button>
+            <button onclick="press(this)" class="num" value="6">6</button>
+            <button onclick="press(this)" class="num" value="1">1</button>
+            <button onclick="press(this)" class="num" value="2">2</button>
+            <button onclick="press(this)" class="num" value="3">3</button>
+            <button onclick="press(this)" class="num" value="0">0</button>
+            <button onclick="press(this)" class="num" value=".">,</button>
             <div class="clear"></div>
 
         </div>
 
         <div class="operation">
-            <button onclick="this" class="synax" value="C/E">C</button>
-            <button onclick="this" class="synax" value="&larr;">&larr;</button>
-            <button onclick="this" class="synax">X^2</button>
-            <button onclick="this" class="synax" value="+">+</button>
-            <button onclick="this" class="synax" value="-">-</button>
-            <button onclick="this" class="synax" value="">!</button>
-            <button onclick="this" class="synax" value="*">X</button>
-            <button onclick="this" class="synax" value="/">&divide;</button>
-            <button onclick="this" class="synax" value="&radic;">&radic;</button>
-            <button onclick="this" class="synax" value="=">=</button>
-            <button onclick="this" class="synax" value="1/x">%</button>
+            <button onclick="clear1()" class="synax" value="">C</button>
+            <button onclick="pow()" class="synax">x^3</button>
+            <button onclick="square()" class="synax">X^2</button>
+            <button onclick="press(this)" class="synax" value="+">+</button>
+            <button onclick="press(this)" class="synax" value="-">-</button>
+            <button onclick="giaithua()" class="synax" value="">!</button>
+            <button onclick="press(this)" class="synax" value="*">x</button>
+            <button onclick="press(this)" class="synax" value="/">&divide;</button>
+            <button onclick="can()" class="synax" value="&radic;">&radic;</button>
+            <button onclick="equal()" class="synax" value="=">=</button>
+            <button onclick="precent()" class="synax" value="%">%</button>
             <div class="clear"></div>
         </div>
         <div class="clear"></div>
@@ -77,7 +56,55 @@
 
     </main>
 
+    <script>
+        var clear = document.getElementById("clear");
 
+        function press(button) {
+            var x = button.value;
+            document.getElementById('kq').innerText += x;
+        }
+
+        function equal() {
+            var y = eval(document.getElementById("kq").innerText);
+            document.getElementById("kq").innerText = y;
+        }
+
+
+        function can() {
+            var y = Math.sqrt(document.getElementById("kq").innerText);
+            document.getElementById("kq").innerText = y;
+
+        }
+
+        function square() {
+            var y = Math.pow(document.getElementById("kq").innerText, 2);
+            document.getElementById("kq").innerText = y;
+        }
+
+        function pow() {
+            var y = Math.pow(document.getElementById("kq").innerText, 3);
+            document.getElementById("kq").innerText = y;
+        }
+
+        function precent() {
+            var y = eval(document.getElementById("kq").innerText / 100);
+            document.getElementById("kq").innerText = y;
+        }
+
+        function giaithua() {
+            var y = document.getElementById("kq").innerText;
+            for (i = 1; y >= 1; y--) {
+                i = i * y;
+            }
+            document.getElementById("kq").innerText = i;
+
+        }
+
+        function clear1() {
+            var y = document.getElementById("kq");
+            document.getElementById("kq").innerText = "";
+        }
+    </script>
 </body>
 <script></script>
 
