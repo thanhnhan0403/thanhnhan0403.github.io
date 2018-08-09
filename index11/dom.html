@@ -33,50 +33,39 @@
         var p3 = document.getElementById("p3");
         //bai1: change font size
         function bai1(x) {
-            let a = document.getElementsByClassName("para");
-            for (i = 0; i <= a.length; i++) {
-                let b = a[i].style.fontSize = `${x}px`;
-                console.log(b);
+            a = document.getElementsByClassName("para");
+            for(i = 0; i < a.length ; i++){
+             a[i].style.fontSize = x + "px";
+       
             }
-            return b;
+       
         }
-        //bai2: tăng kích thước font size lên 1
+
         function bai2(x) {
-            let a = document.querySelectorAll("p");
-            /*  for (i = 0; i <= a.length - 1; i++) {
-                b = a[i].style.fontSize;
-                b = parseInt(b);
-*/
-            b = a.style.fontSize;
-            b = parseIn(b);
-            if (b >= 30) {
-                x.style.fontSize = b + 'px';
-
-            } else {
-                x.style.fontSize = (b + 1) + 'px';
+    
+            b = x.style.fontSize;
+            b= parseInt(b) ;
+            if(b>=30){
+                x.style.fontSize = 30+  "px";    
             }
-
-        }
-
-
-
-
-        //bài 3: giảm kinh thước font size xuống 1
-        function bai3(p) {
-            let a = document.querySelectorAll("p");
-            for (i = 0; i <= a.length - 1; i++) {
-                b = a[i].style.fontSize;
-                b = parseInt(b);
-
-                if (b <= 10) {
-                    p.style.fontSize + = b + 'px';
-
-                } else {
-                    p.style.fontSize + = (b - 1) + 'px';
-                }
+            else
+            {
+             x.style.fontSize = (b+1) + "px";
             }
+    }
+    function bai3(x) {     
+           b = x.style.fontSize;
+           b= parseInt(b) ;
+           if(b<=10){
+               x.style.fontSize = 10 +  "px";          
+           }
+           else
+           {
+            x.style.fontSize = (b-1) + "px";
+           }
 
-        }
+      
+   }
 
         // bài 4: style màu cho các đoạn văn
 
