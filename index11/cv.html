@@ -3,22 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Document</title>
 </head>
 
 <body>
-    <canvas id="canvas">
+    <canvas id="canvas" width="500" height="500" style="border: 2px solid black"> 
 
     </canvas>
     <script>
         const canvas = document.getElementById("canvas");
-        canvas.width = 300;
-        canvas.height = 300;
-        const anh = new Image();
-        anh.src = test.jpeg;
-        context = canvas.getcontex("2d")
+        const context = canvas.getContext("2d");
 
         function com(x, y, w, h, color = "red") {
             this.x = x;
@@ -29,19 +24,31 @@
 
             this.draw = function() {
                 context.fillStyle = this.color;
-                context.fillRect(this.x, this.y, this, w, this.h);
+                context.fillRect(this.x, this.y, this.w, this.h);
             };
 
         };
-        let hinhvuong = new com(10, 10, 100, 200, "green");
-        hinhvuong.draw();
-        context.drawImage(anh, 10, 10, 200, 200);
+        const game = {
+            strart: function() {};
+            setInterval();
+            clear:
 
+        };
 
-
-        window.onload = function() {
-
+        function update() {
+            //tại con klong
+            //tao cay xuong rong
+            // tạo random height
+            //tạo xuong rongf = new comonet()
+            //obstacle.push(cay xuong rong)
         }
+
+
+        set.Interval
+        let hinhvuong = new com(10, 450, 50, 50, "red");
+        hinhvuong.draw();
+        let hcn1 = new com(100, 300, 50, 200, "blue");
+        hcn1.draw();
     </script>
 </body>
 

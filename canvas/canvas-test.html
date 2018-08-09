@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+    <canvas id="myCanvas" width="500" height="500" style="border:1px solid #c3c3c3;">
+
+  </canvas>
+
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        const context = canvas.getContext("2d");
+
+        function obj(x, y, w, h, color) {
+            this.x = x;
+            this.y = y;
+            this.w = w;
+            this.h = h;
+            this.color = color;
+            this.draw = function() {
+                context.fillStyle = this.color;
+                context.fillRect = (this.x, this.y, this.w, this.h);
+
+            };
+        };
+        let hv = new obj(150, 150, 50, 50, "red");
+        hv.draw();
+        console.log(hv);
+        let ht = new obj(50, 50, 50, 50, "blue");
+    </script>
+</body>
+
+</html>
